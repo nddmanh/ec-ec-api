@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  ecec-dbsql:
+    container_name: ecec-dbsql
+    build:
+      context: ./mysql
+    environment:
+      MYSQL_HOST: '0.0.0.0'
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: ecec
+      MYSQL_USER: ecec
+      MYSQL_PASSWORD: ecec
+    ports:
+      - '127.0.0.1:3306:3306'
+    logging:
+      driver: 'json-file'
+      options:
+        max-file: '5'
+        max-size: '10m'
