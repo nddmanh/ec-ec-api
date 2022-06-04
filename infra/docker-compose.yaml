@@ -11,7 +11,7 @@ services:
       MYSQL_USER: ecec
       MYSQL_PASSWORD: ecec
     ports:
-      - '127.0.0.1:3306:3306'
+      - '127.0.0.1:3307:3306'
     logging:
       driver: 'json-file'
       options:

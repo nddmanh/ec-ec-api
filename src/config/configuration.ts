@@ -6,7 +6,7 @@ export default () => ({
     password: process.env.DATABASE_PASSWORD || 'ecec',
     database: process.env.DATABASE_NAME || 'ecec',
     host: process.env.DATABASE_HOST || 'localhost',
-    port: parseInt(process.env.DATABASE_PORT, 10) || 3306,
+    port: parseInt(process.env.DATABASE_PORT, 10) || 3307,
     logging: process.env.DATABASE_LOGGING ? true : false,
   },
 });

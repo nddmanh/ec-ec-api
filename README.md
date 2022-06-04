@@ -13,6 +13,8 @@ $ npm install
 ```bash
 $ cd infra
 $ docker-compose up -d ecec-dbsql
+$ cd ..
+$ npm run migration:run
 ```
 
 ## Config env
